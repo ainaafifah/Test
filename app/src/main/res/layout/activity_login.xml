@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:background="#DCCAA4"
+    android:paddingTop="100dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="252dp"
+        android:layout_height="101dp"
+        android:layout_gravity="center"
+        android:src="@drawable/busted_logo" />
+
+    <TextView
+        android:id="@+id/slogan_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="Hey you! Let's fight crime together!"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/antic"
+        android:text="SIGN IN"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:hint="Email"
+            android:textColorHint="#a8a7ac"
+            android:textStyle="italic"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="#a8a7ac"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:inputType="textPassword"/>
+
+
+        <TextView
+            android:id="@+id/btnForgot"
+            android:layout_width="150dp"
+            android:textSize="17sp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="Forget Password?"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_gravity="end"
+            android:elevation="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <Button
+            android:id="@+id/btnMainLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:text="GO"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="New User? SIGN UP"
+            android:textColor="@color/black"
+            android:layout_gravity="right"
+            android:fontFamily="@font/antic"
+            android:elevation="0dp"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
